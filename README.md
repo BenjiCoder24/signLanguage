@@ -36,46 +36,46 @@ This application aims to bridge the communication gap by translating sign langua
 
 ### Clone the Repository
 
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/sign-language-interpreter.git
 cd sign-language-interpreter
-\`\`\`
+```
 
 ### Back-End Setup
 
 1. **Create a Virtual Environment** (optional but recommended):
 
-   \`\`\`bash
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows, use venv\Scripts\activate
-   \`\`\`
+   ```
 
 2. **Install Dependencies**:
 
-   \`\`\`bash
+   ```bash
    pip install flask flask_cors openai
    # Include other dependencies like mediapipe and tensorflow if used
-   \`\`\`
+   ```
 
 3. **Set Up Environment Variables**:
 
    - Create a \`.env\` file in the project root directory:
 
-     \`\`\`bash
+     ```bash
      touch .env
-     \`\`\`
+     ```
 
    - Add your OpenAI API key to the \`.env\` file:
 
-     \`\`\`env
+     ```env
      OPENAI_API_KEY=your_openai_api_key_here
-     \`\`\`
+     ```
 
    - Alternatively, you can set the environment variable directly in your terminal:
 
-     \`\`\`bash
+     ```bash
      export OPENAI_API_KEY=your_openai_api_key_here
-     \`\`\`
+     ```
 
 ### Front-End Setup
 
@@ -85,9 +85,9 @@ No additional setup is required for the front-end. Ensure that \`index.html\` an
 
 ### Start the Back-End Server
 
-\`\`\`bash
+```bash
 python app.py
-\`\`\`
+```
 
 The Flask server will start running on \`http://localhost:5000\`.
 
@@ -95,10 +95,10 @@ The Flask server will start running on \`http://localhost:5000\`.
 
 You can serve the front-end files using any static file server. For example:
 
-\`\`\`bash
+```bash
 cd front-end
 python -m http.server 8000
-\`\`\`
+```
 
 Access the front-end at \`http://localhost:8000\` in your web browser.
 
@@ -112,7 +112,7 @@ Access the front-end at \`http://localhost:8000\` in your web browser.
 
 ## Project Structure
 
-\`\`\`
+```
 sign-language-interpreter/
 ├── app.py
 ├── requirements.txt
@@ -121,7 +121,7 @@ sign-language-interpreter/
 └── front-end/
     ├── index.html
     └── script.js
-\`\`\`
+```
 
 - \`app.py\`: Main Flask application file.
 - \`requirements.txt\`: Contains all Python dependencies.
